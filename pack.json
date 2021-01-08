@@ -1,0 +1,20 @@
+{
+	"formatVersion": 1, 												//Updates to this format will surely be necessary
+	"name": "thingy",														//Display name
+	"version": 1.0,															//Version
+	"description": "A description",							//Description
+	"games": { 																	//can be used 
+		"forge": {																//Pack intern identifier, should **not** be used by tools to chose game/loader
+			"game": "minecraft-java",								//An identifier for the game, needs to be unique
+			"loader": "forge", 											//A loader for games that support it, defaults to "none", valid values are game specific
+			"required": true, 											//Defaults to true
+			"version": "[1.16,)"										//Version range for supported versions of the game
+		},
+		"optifine": {
+			"game": "minecraft-java",
+			"loader": "optifine",
+			"required": false,
+			"version": "1.16.4"
+		} 
+	}
+}

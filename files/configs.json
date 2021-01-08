@@ -1,0 +1,6 @@
+{
+	"name": "Configs",														//Display name of the mod
+	"location": "%local%/configs/*",							//URI, either download url, or file inside of "local-files" folder (can be an entire folder)
+	"hash": "someHash",														//Hash for validation and optional caching
+	"targetLocation": "/configs/"									//Target location where the file should be downloaded/extracted
+}

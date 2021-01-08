@@ -1,0 +1,7 @@
+{
+	"name": "Mod 1",															//Display name of the mod
+	"location": "url",														//URI, either download url, or file inside of "local-files" folder (can be an entire folder)
+	"hash": "someHash",														//Hash for validation and optional caching
+	"distribution": "dedicatedServer",						//Distribution, valid values are game specific
+	"targetLocation": "/mods/"										//Target location where the file should be downloaded/extracted
+}

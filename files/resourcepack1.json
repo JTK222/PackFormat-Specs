@@ -1,0 +1,9 @@
+{
+	"loader": "optifine",														//Ignore this file if the loader specified in pack.json is optional and omitted 
+	"name": "Display Name - Resource Pack",				//Display name of the mod
+	"location": "url",														//URI, either download url, or file inside of "local-files" folder (can be an entire folder)
+	"hash": "someHash",														//Hash for validation and optional caching
+	"distribution": "client",											//Distribution, valid values are game specific
+	"required": false,														//defaults to true, tools can use this to let the user disable them
+	"targetLocation": "/resourcepacks/"						//Target location where the file should be downloaded/extracted
+}

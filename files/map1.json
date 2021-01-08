@@ -1,0 +1,8 @@
+{
+	"name": "Map 1",															//Display name of the mod
+	"location": "url",														//URI, either download url, or file inside of "local-files" folder (can be an entire folder)
+	"hash": "someHash",														//Hash for validation and optional caching
+	"optional": true,															//Defaults to false
+	"distribution": "server",											//Distribution, specified per game
+	"targetLocation": "/maps/"										//Target location where the file should be downloaded/extracted
+}
