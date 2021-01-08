@@ -3,18 +3,26 @@
 	"name": "thingy",														//Display name
 	"version": 1.0,															//Version
 	"description": "A description",							//Description
-	"games": { 																	//can be used 
-		"forge": {																//Pack intern identifier, should **not** be used by tools to chose game/loader
-			"game": "minecraft-java",								//An identifier for the game, needs to be unique
-			"loader": "forge", 											//A loader for games that support it, defaults to "none", valid values are game specific
-			"required": true, 											//Defaults to true
-			"version": "[1.16,)"										//Version range for supported versions of the game
-		},
-		"optifine": {
-			"game": "minecraft-java",
-			"loader": "optifine",
-			"required": false,
-			"version": "1.16.4"
-		} 
+	"credits": [																//A list of credits, usage is up to tool using this file
+		{
+			"role": "Author",												//Role of person
+			"name": "User",													//Name of person
+			"link": "url"														//Optional link to persons social media or similar
+		}
+	],
+	"game": { 
+		"game": "minecraft-java",									//A universal identifier for games
+		"version": "[1.16.2,)",										//Version range for supported versions of the game
+		"patches": {
+			"forge": {															//Pack intern identifier, should **not** be used by tools to chose game/loader
+				"patch": "forge", 										//A universal patch identifier for games that support it, defaults to "none", valid values are game specific
+				"patchVersion": "[32,)"								//Version range for supported loader versions
+			},
+			"optifine": {
+				"patch": "optifine",
+				"gameVersion": "[1.16.4]",						//optional patches can specify a game version, higher priority
+				"required": false 										//Defaults to true
+			}
+		}
 	}
 }
