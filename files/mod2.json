@@ -2,5 +2,10 @@
 	"name": "Mod 2",															//Display name of the mod
 	"location": "url",														//URI, either download url, or file inside of "local-files" folder (can be an entire folder)
 	"hash": "someHash",														//Hash for validation and optional caching
-	"targetLocation": "/mods/"										//Target location where the file should be downloaded/extracted
+	"targetLocation": "/mods/",										//Target location where the file should be downloaded/extracted
+	"optional": true,															//Optional files in the pack, tools should allow users to disable it, if they want to.
+	"dependencies": [															//Required dependencies, disable this file if optional and any dependency is disabled,
+		"mod1"																			//name of the file.json omitting the json
+	],
+	"optionalDependencies": []										//Optional dependencies, has no effect on this file only necessary for files which aren't standalone
 }

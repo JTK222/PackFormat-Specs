@@ -1,5 +1,5 @@
 {
-	"requiredPatch": "optifine",									//Ignore this file if the specified patch in pack.json is optional and missing 
+	"requiredPatch": "shader",									//Ignore this file if the specified patch in pack.json is optional and missing 
 	"name": "Display Name - Resource Pack",				//Display name of the mod
 	"location": "url",														//URI, either download url, or file inside of "local-files" folder (can be an entire folder)
 	"hash": "someHash",														//Hash for validation and optional caching

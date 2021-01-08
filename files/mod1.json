@@ -3,5 +3,6 @@
 	"location": "url",														//URI, either download url, or file inside of "local-files" folder (can be an entire folder)
 	"hash": "someHash",														//Hash for validation and optional caching
 	"distribution": "dedicatedServer",						//Distribution, valid values are game specific
-	"targetLocation": "/mods/"										//Target location where the file should be downloaded/extracted
+	"targetLocation": "/mods/",										//Target location where the file should be downloaded/extracted
+	"standalone": "true"													//Defaults to true, if false implies that optional=true, if file is not standalone and there are no dependendants it should be disabled
 }
